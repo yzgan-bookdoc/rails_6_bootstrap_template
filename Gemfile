@@ -51,3 +51,5 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'haml'
 gem 'haml-rails', '~> 2.0'
+
+gem "draper", "~> 4.0"
