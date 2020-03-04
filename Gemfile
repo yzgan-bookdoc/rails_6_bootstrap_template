@@ -40,3 +40,6 @@ end
 gem 'rubocop', '~> 0.80.1', require: false
 gem 'rubocop-rails', require: false
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+gem 'haml'
+gem 'haml-rails', "~> 2.0"
