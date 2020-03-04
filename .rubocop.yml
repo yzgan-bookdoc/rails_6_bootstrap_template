@@ -1,6 +1,6 @@
 require:
   - rubocop-rails
-
+  - rubocop-rspec
 Style/HashEachMethods:
   Enabled: true
 Style/HashTransformKeys:
