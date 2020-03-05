@@ -2,12 +2,16 @@
   "name": "BookDoc_Admin_Console",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
-    "bootstrap": "^4.4.1",
+    "bootstrap-material-design": "^4.1.2",
+    "chartist": "^0.11.4",
     "jquery": "^3.4.1",
+    "material-dashboard": "^2.1.0",
+    "material-design-icons": "^3.0.1",
     "popper.js": "^1.16.1",
     "turbolinks": "^5.2.0"
   },
