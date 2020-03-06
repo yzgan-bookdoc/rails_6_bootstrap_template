@@ -28,6 +28,10 @@
         %a.nav-link{:href => "/icons"}
           %i.material-icons bubble_chart
           %p Icons
+      %li.nav-item{class: active_sidebar(controller: 'home', action: 'user_lign')}
+        %a.nav-link{:href => "/user_login"}
+          %i.material-icons bubble_chart
+          %p Login
       %li.nav-item
         %a.nav-link{:href => "javascript:;"}
           %i.material-icons location_ons
@@ -40,7 +44,3 @@
         = link_to 'http://demos.creative-tim.com/material-dashboard/docs/2.0/getting-started/introduction.html', class: 'nav-link' do
           %i.material-icons notifications
           %p Documentation
-      %li.nav-item
-        = link_to 'https://demos.creative-tim.com/material-kit/index.html', class: 'nav-link' do
-          %i.material-icons notifications
-          %p Material Kit Demo

@@ -2,7 +2,6 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
-import Chartist from 'chartist'
 
 require("@rails/ujs").start()
 require("turbolinks").start()
@@ -10,8 +9,6 @@ require("@rails/activestorage").start()
 require("channels")
 require('material-design-icons')
 require('bootstrap-material-design')
-    // require('material-dashboard/assets/js/material-dashboard.js.map')
-require('material-dashboard/assets/demo/demo')
 require('material-dashboard/assets/js/plugins/bootstrap-notify')
 require('chartist')
 require("@fortawesome/fontawesome-free/js/all")

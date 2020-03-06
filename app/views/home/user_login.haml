@@ -1,0 +1,36 @@
+.header-filter.d-flex.align-items-center.vh-100{:style => "background-image: url(#{asset_pack_path('media/images/bg2.jpg')}); background-size: cover; background-position: top center;"}
+  .container
+    .row
+      .col-lg-4.col-md-6.ml-auto.mr-auto
+        .card.card-login
+          %form.form{:action => "", :method => ""}
+            .card-header.card-header-primary.text-center
+              %h3.card-title.p-2
+                Login
+              .social-line.p-2
+                %a.btn.btn-just-icon.btn-link.text-white{:href => "#"}
+                  %i.fab.fa-facebook-square
+                %a.btn.btn-just-icon.btn-link.text-white{:href => "#"}
+                  %i.fab.fa-twitter
+                %a.btn.btn-just-icon.btn-link.text-white{:href => "#"}
+                  %i.fab.fa-google-plus
+            %p.description.text-center Or Be Classical
+            .card-body
+              .input-group.p-2
+                .input-group-prepend
+                  %span.input-group-text
+                    %i.material-icons face
+                %input.form-control{:placeholder => "First Name...", :type => "text"}/
+              .input-group.p-2
+                .input-group-prepend
+                  %span.input-group-text
+                    %i.material-icons mail
+                %input.form-control{:placeholder => "Email...", :type => "email"}/
+              .input-group.p-2
+                .input-group-prepend
+                  %span.input-group-text
+                    %i.material-icons lock_outline
+                %input.form-control{:placeholder => "Password...", :type => "password"}/
+            .text-center
+              %a.btn.btn-primary.btn-link.btn-wd.btn-lg{:href => "#pablo"} Get Started
+

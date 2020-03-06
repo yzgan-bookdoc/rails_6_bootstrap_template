@@ -13,4 +13,6 @@ class HomeController < ApplicationController
   def notification; end
 
   def typography; end
+
+  def user_login; end
 end
