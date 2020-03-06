@@ -9,7 +9,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 Dotenv::Railtie.load
 
-module BookDocAdminConsole
+module RailsMaterialBoilerPlate
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
