@@ -100,7 +100,7 @@ $(document).on('turbolinks:load', function() {
 });
 
 $(document).on('click', '.navbar-toggler', function() {
-    $toggle = $(this);
+    const $toggle = $(this);
 
     if (mobile_menu_visible == 1) {
         $('html').removeClass('nav-open');
@@ -253,6 +253,7 @@ const md = {
     },
 
     initSidebarsCheck: function() {
+        const $sidebar = $('.sidebar');
         if ($(window).width() <= 991) {
             if ($sidebar.length != 0) {
                 md.initRightMenu();
@@ -401,24 +402,24 @@ const md = {
 
 
     initRightMenu: debounce(function() {
-        $sidebar_wrapper = $('.sidebar-wrapper');
+        const $sidebar_wrapper = $('.sidebar-wrapper');
 
         if (!mobile_menu_initialized) {
-            $navbar = $('nav').find('.navbar-collapse').children('.navbar-nav');
+            const $navbar = $('nav').find('.navbar-collapse').children('.navbar-nav');
 
-            mobile_menu_content = '';
+            var mobile_menu_content = '';
 
-            nav_content = $navbar.html();
+            var nav_content = $navbar.html();
 
             nav_content = '<ul class="nav navbar-nav nav-mobile-menu">' + nav_content + '</ul>';
 
-            navbar_form = $('nav').find('.navbar-form').get(0).outerHTML;
+            const navbar_form = $('nav').find('.navbar-form').get(0).outerHTML;
 
-            $sidebar_nav = $sidebar_wrapper.find(' > .nav');
+            const $sidebar_nav = $sidebar_wrapper.find(' > .nav');
 
             // insert the navbar form before the sidebar list
-            $nav_content = $(nav_content);
-            $navbar_form = $(navbar_form);
+            const $nav_content = $(nav_content);
+            const $navbar_form = $(navbar_form);
             $nav_content.insertBefore($sidebar_nav);
             $navbar_form.insertBefore($nav_content);
 
