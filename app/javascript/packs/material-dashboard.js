@@ -65,6 +65,10 @@ var seq2 = 0,
 
 $(document).on('turbolinks:load', function() {
 
+    $('html').removeClass('nav-open');
+
+    mobile_menu_initialized = false
+
     $('body').bootstrapMaterialDesign();
 
     const $sidebar = $('.sidebar');
@@ -96,7 +100,6 @@ $(document).on('turbolinks:load', function() {
             $(this).closest('div').removeClass('has-error');
         }
     });
-
 });
 
 $(document).on('click', '.navbar-toggler', function() {

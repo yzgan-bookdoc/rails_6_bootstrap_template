@@ -24,11 +24,9 @@ const images = require.context('../../assets/images', true)
 const imagePath = (name) => images(name, true)
 
 import md from './material-dashboard'
-import ('./demo')
 import ('./stylesheets/application')
 
 document.addEventListener("turbolinks:load", () => {
-    $('[data-toggle="tooltip"]').tooltip()
     setTimeout(function() {
         md.initDashboardPageCharts();
     }, 500);

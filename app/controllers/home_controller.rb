@@ -11,4 +11,6 @@ class HomeController < ApplicationController
   def table_list; end
 
   def notification; end
+
+  def typography; end
 end
