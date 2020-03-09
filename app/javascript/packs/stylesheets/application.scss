@@ -2,6 +2,7 @@
 @import '@fortawesome/fontawesome-free';
 @import './bootstrap_custom.scss';
 @import './material_kit_custom.scss';
+@import './material_datetime_picker';
 .header-filter:before,
 .header-filter:after {
     position: absolute;
@@ -36,4 +37,8 @@
     margin-left: 20px;
     position: absolute;
     width: 260px;
+}
+
+.text-warning {
+    color: #ff9800 !important;
 }

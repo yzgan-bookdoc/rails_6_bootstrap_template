@@ -49,6 +49,14 @@
                   .form-group
                     %label.bmd-label-floating Postal Code
                     %input.form-control{:type => "text"}/
+                .col-md-4
+                  .form-group
+                    %label.mbd-label-floating Date
+                    %input.form-control.datepicker
+                .col-md-4
+                  .form-group
+                    %label.mbd-label-floating DateTime
+                    %input.form-control.datetimepicker
               .row
                 .col-md-12
                   .form-group
@@ -62,7 +70,6 @@
         .card.card-profile
           .card-avatar
             %a{:href => "#pablo"}
-              -# %img.img{:src => "../assets/img/faces/marc.jpg"}/
               %img.img{:src => asset_pack_path('media/faces/marc.jpg') }/
           .card-body
             %h6.card-category.text-gray CEO / Co-Founder

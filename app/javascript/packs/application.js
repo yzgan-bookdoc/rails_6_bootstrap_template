@@ -12,6 +12,7 @@ require('bootstrap-material-design')
 require('material-dashboard/assets/js/plugins/bootstrap-notify')
 require('chartist')
 require("@fortawesome/fontawesome-free/js/all")
+require('material-datetime-picker/dist/material-datetime-picker')
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -21,12 +22,14 @@ const images = require.context('../../assets/images', true)
 const imagePath = (name) => images(name, true)
 
 import md from './material-dashboard'
+
+global.$ = jQuery;
+
 import ('./stylesheets/application')
 
 document.addEventListener("turbolinks:load", () => {
     setTimeout(function() {
         md.initDashboardPageCharts();
     }, 500);
-
     window.md = md
 })
