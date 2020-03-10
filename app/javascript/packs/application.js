@@ -12,7 +12,7 @@ require('bootstrap-material-design')
 require('material-dashboard/assets/js/plugins/bootstrap-notify')
 require('chartist')
 require("@fortawesome/fontawesome-free/js/all")
-require('material-datetime-picker/dist/material-datetime-picker')
+require('md-date-time-picker/dist/js/mdDateTimePicker')
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -22,8 +22,10 @@ const images = require.context('../../assets/images', true)
 const imagePath = (name) => images(name, true)
 
 import md from './material-dashboard'
+import mdDateTimePicker from 'md-date-time-picker'
 
 global.$ = jQuery;
+global.mdDateTimePicker = mdDateTimePicker;
 
 import ('./stylesheets/application')
 
